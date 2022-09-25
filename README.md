@@ -8,3 +8,19 @@
 - Create a database named `bkash` and update .env credentials
 - `php artisan migrate --seed`
 - `php artisan serve` to start the app on http://localhost:8000/
+
+#### Create your Own order
+- POST /order
+`{
+    'amount': 10XX
+}`
+
+#### Order List
+- GET /Order
+
+
+#### Make Payment
+
+Create a payment with order id and it will execute payment
+- GET bkash/create-payment?order_id=X
+
